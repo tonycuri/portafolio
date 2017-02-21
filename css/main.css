@@ -87,6 +87,39 @@ header #next_section img{
   transform: rotate(180deg);
 }
 
+#slider{
+  width: 100%;
+  position: relative;
+  height: 600px;
+  background: #000;
+}
+#slider section.slide{
+  position:absolute;
+  width: 100%;
+  top:0px;
+  left:0px;
+}
+#slider #home{
+  height: 500px;
+  background: orange;
+}
+#slider #aboutme{
+  height: 400px;
+  background: red;
+}
+#slider #skills{
+  height: 300px;
+  background: blue;
+}
+#slider #portfolio{
+  height: 200px;
+  background: green;
+}
+#slider #blog{
+  height: 100px;
+  background: yellow;
+}
+
 @media screen and (min-width: 480px){
   body{
     background: red;
