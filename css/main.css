@@ -11,6 +11,7 @@ header{
   height: 35px;
   background: #233d58;
   position:relative;
+  z-index: 999;
 }
 header h1{
   display:none;
@@ -91,18 +92,77 @@ header #next_section img{
   width: 100%;
   position: relative;
   height: 600px;
-  background: #000;
 }
 #slider section.slide{
   position:absolute;
   width: 100%;
-  top:0px;
+  top:-17px;
   left:0px;
 }
+
+/**********  HOME   *********/
 #slider #home{
-  height: 500px;
-  background: orange;
+  background:#233d58;
+  font-family: 'aller';
+  position: relative;
+  text-align: center;
+  padding-bottom: 50px;
 }
+#slider #home .mainanimation{
+  background: red;
+  width: 80%;
+  margin-left:10%;
+  min-height: 300px;
+  position: absolute;
+}
+#slider #home .mainlogo{
+  /*background: rgba(35,61,88,0.8);*/
+  background: none;
+  position: relative;
+  width: 60vw;
+  margin-left: 20vw;
+  min-height: 430px;
+}
+#slider #home .mainlogo h2{
+  font-size: 1.2em;
+  padding-top: 80px;
+  color:#FFF;
+  font-weight: lighter;
+}
+#slider #home .mainlogo strong{
+  font-size: 2em;
+  font-family: 'aldo';
+  display: block;
+}
+#slider #home .mainlogo figure,
+#slider #home .mainlogo figure img{
+  width: 100%;
+  margin: 0;
+}
+#slider #home .mainlogo figure{
+  padding-bottom: 30px;
+}
+#slider #home .buttonspage{
+  width: 100%;
+  text-align: center;
+}
+#slider #home .buttonspage > *{
+  display: inline-block;
+  width: 40%;
+  margin: 5px 2.5%;
+  color:white;
+  padding: 15px 2.5%;
+}
+#slider #home #contratame{
+  cursor:pointer;
+  background: #f8931f;
+}
+#slider #home a{
+  text-decoration: none;
+  background: #29abe2;
+}
+
+
 #slider #aboutme{
   height: 400px;
   background: red;
@@ -119,7 +179,6 @@ header #next_section img{
   height: 100px;
   background: yellow;
 }
-
 #contact_form{
   position:absolute;
   right: 0px;
@@ -131,6 +190,7 @@ header #next_section img{
   font-family: "aller";
   height: 100vh;
   z-index: 999;
+  display: none;
 }
 #contact_form #close_form{
   position: absolute;
@@ -192,10 +252,42 @@ header #next_section img{
 #contact_form textarea:focus{
   outline:0px;
 }
+#contact_button{
+  width: 60px;
+  height: 60px;
+  background:#FFF ;
+  border-radius: 50%;
+  color:#f8931f;
+  z-index: 80;
+  position:fixed;
+  right: 10px;
+  top:80vh;
+}
+#contact_button:hover{
+  cursor: pointer;
+}
+#contact_button:before {
+  font-family: 'icomoon';
+  content: "\ea95";
+  position: relative;
+  font-size: 3.9em;
+  top:-7px;
+  left:-2px;
+}
+
 /******************* Media queries*******/
 @media screen and (min-width: 480px){
-  body{
-    background: red;
+  #slider #home .mainlogo{
+    width: 270px;
+    left: 50%;
+    margin-left: -135px;
+    padding-bottom: 30px;
+  }
+  #slider #home .mainlogo h2{
+    font-size: 1.4em;
+  }
+  #slider #home .buttonspage > *{
+    width: 200px;
   }
 }
 
@@ -298,7 +390,15 @@ header #next_section img{
   header #next_section img{
     left:17px;
   }
+  #contact_form{
+    top:50px;
+    width: 300px;
+  }
+  #contact_button{
+    right: 30px;
+  }
 }
+
 
 @media screen and (min-width: 950px){
   body{

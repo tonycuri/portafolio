@@ -29,8 +29,9 @@ function alertSize() {
     }else{
       card_menu.style.display = "block";
     }
-  }
-  function displayMenu(){
+}
+
+function displayMenu(){
     var display;
     var card_menu = document.getElementById("card_menu");
     display = card_menu.style.display;
@@ -42,7 +43,7 @@ function alertSize() {
     }
   }
 
-  function setColors(i){
+function setColors(i){
     var search;
     var bkgr_body;
     var bkgr_menu;
@@ -61,7 +62,7 @@ function alertSize() {
     menu.style.background = bkgr_menu;
   }
 
-  function navSection(nav){
+function navSection(nav){
     var search;
     var show;
 
@@ -76,7 +77,7 @@ function alertSize() {
     }
   }
 
-  function displaySection(nav){
+function displaySection(nav){
     var search;
     var show;
 
@@ -101,3 +102,8 @@ function alertSize() {
     }
     setColors(i);
   }
+
+function displayFormContact(status){
+  var form = document.getElementById("contact_form");
+  form.style.display = status;
+}

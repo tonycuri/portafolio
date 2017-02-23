@@ -39,7 +39,7 @@
           <li><a onClick ="navSection('skills')" href="#">Skills</a></li>
           <li><a onClick ="navSection('portfolio')" href="#">Portfolio</a></li>
           <li><a onClick ="navSection('blog')" href="#">Blog</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#" onClick="displayFormContact('block')">Contacto</a></li>
         </ul>
       </div>
     </nav>
@@ -49,7 +49,19 @@
   </header>
 
   <div id="slider">
-    <section class="slide" id="home" style="display:block"></section>
+    <section class="slide" id="home" style="display:block">
+      <div class="mainanimation"></div>
+      <div class="mainlogo">
+        <h2>Soy un <strong>Desarrollador Web</strong></h2>
+        <figure>
+          <img src="img/logoweb2.png" alt="">
+        </figure>
+      </div>
+      <div class="buttonspage">
+        <div id="contratame"  onClick="displayFormContact('block')">CONTRATAME</div>
+        <a href="docs/cv2017.pdf" target="_blank">DESCARGAR CV</a>
+      </div>
+    </section>
     <section class="slide" id="aboutme" style="display:none"></section>
     <section class="slide" id="skills" style="display:none"></section>
     <section class="slide" id="portfolio" style="display:none"></section>
@@ -59,7 +71,7 @@
   <div id="contact_form">
     <form action="contact.php" id="form1" name="form1" method="post">
 
-      <div id="close_form"></div>
+      <div id="close_form" onClick="displayFormContact('none')"></div>
       <figure id="logo_mensaje"><img src="img/sobre.png" alt=""></figure>
       <p>Dí Hola</p>
 
@@ -69,11 +81,12 @@
 
       <textarea name="message" id="message" placeholder="Tu mensaje" onfocus="if(this.placeholder='') this.placeholder='Tu mensaje'"></textarea>
 
-
-
       <input type="submit" name="submit" id="button" value="ENVIAR">
     </form>
   </div>
+  <div id="contact_button" onClick="displayFormContact('block')"></div>
+
+  <footer></footer>
 
   <script src="js/main.js"></script>
 </body>
