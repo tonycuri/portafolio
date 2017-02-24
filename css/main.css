@@ -1,8 +1,6 @@
 body{
   font-size: 16px;
   font-family: 'aldo',sans-serif;
-  /*background: #233d58;*/
-  background: purple;
   position:relative;
 }
 
@@ -96,7 +94,7 @@ header #next_section img{
 #slider section.slide{
   position:absolute;
   width: 100%;
-  top:-17px;
+  top:-20px;
   left:0px;
 }
 
@@ -109,11 +107,58 @@ header #next_section img{
   padding-bottom: 50px;
 }
 #slider #home .mainanimation{
-  background: red;
   width: 80%;
   margin-left:10%;
   min-height: 300px;
   position: absolute;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: none;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+.js-count-particles{
+  font-size: 1.1em;
+}
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+}
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+.count-particles{
+  border-radius: 0 0 3px 3px;
 }
 #slider #home .mainlogo{
   /*background: rgba(35,61,88,0.8);*/
@@ -274,7 +319,81 @@ header #next_section img{
   top:-7px;
   left:-2px;
 }
-
+/**********FOOTER********/
+footer{
+  width: 100%;
+  background: #000;
+  color:white;
+  text-align: center;
+  z-index: 90;
+  height: 150px;
+  position: fixed;
+  bottom:-130px;
+  transition-duration: 0.4s;
+}
+footer:after{
+  content:'\ea50';
+  font-family: 'icomoon';
+  position: absolute;
+  top:0px;
+  left:50%;
+  width: 80px;
+  height: 80px;
+  margin-left: -40px;
+  margin-top: -20px;
+  border-radius: 50%;
+  background: #000;
+  color:white;
+  font-size: 4.5em;
+}
+footer:hover:after{
+  transform: rotate(180deg);
+  background: white;
+  color: #000;
+  transition-duration: 0.4s;
+  font-weight: bold;
+}
+footer:hover{
+  bottom:0px
+}
+footer .rrss{
+  margin-top: 70px;
+  width: 100%;
+  height: 40px;
+}
+footer .rrss a{
+  width: 40px;
+  height: 40px;
+  display:inline-block;
+  position: relative;
+  margin-right:10px;
+}
+footer .rrss a:before{
+  color:white;
+  text-decoration: none;
+  position:absolute;
+  font-size: 2em;
+  top:3px;
+  left:4px;
+  font-family: 'icomoon';
+}
+footer .rrss a:nth-child(1):before{
+  content:'\ea96';
+}
+footer .rrss a:nth-child(2):before{
+  content:'\eab0';
+}
+footer .rrss a:nth-child(3):before{
+  content:'\ea90';
+}
+footer .rrss a:nth-child(4):before{
+  content:'\eaca';
+}
+footer p{
+  font-size: 0.7em;
+  font-weight: lighter;
+  font-family: 'aller';
+}
 /******************* Media queries*******/
 @media screen and (min-width: 480px){
   #slider #home .mainlogo{
