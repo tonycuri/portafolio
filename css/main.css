@@ -105,11 +105,12 @@ header #next_section img{
   position: relative;
   text-align: center;
   padding-bottom: 50px;
+
 }
 #slider #home .mainanimation{
   width: 80%;
   margin-left:10%;
-  min-height: 300px;
+  min-height: 400px;
   position: absolute;
 }
 canvas {
@@ -207,11 +208,82 @@ canvas {
   background: #29abe2;
 }
 
-
+/**************ABOUTME******************/
 #slider #aboutme{
-  height: 400px;
-  background: red;
+  background:#F1F1F1;
+  font-family: 'aller';
+  position: relative;
+  padding-bottom: 50px;
 }
+#slider #aboutme figure{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#slider #aboutme img{
+  width: 100%;
+}
+#slider #aboutme .descripcion{
+  width: 70%;
+  margin-left: 10%;
+  background: white;
+  padding: 20px;
+  padding-top: 0;
+  position:relative;
+  top:-40px;
+  box-shadow: 1px 1px 1px #d2d2d2;
+}
+#slider #aboutme .descripcion h2{
+  background: #29ABE2;
+  color: white;
+  display: inline-block;
+  padding: 10px 30px 10px 20px;
+  position: relative;
+  top:-20px;
+  left:-20px;
+}
+#slider #aboutme .descripcion h2:after{
+  /*content:'';
+  border-style: solid;
+  border-width: 15px 15px 15px 0px;
+  border-color: transparent #29ABE2 transparent transparent;
+  position:absolute;
+  left: 0;
+  margin-left: -15px;
+  top: 68%;*/
+  content: '';
+border-color: transparent #29abe2 transparent transparent;
+border-style: solid;
+border-width: 15px 12px 0px 15px;
+left: -26px;
+top: 32px;
+position: absolute;
+}
+#slider #aboutme .descripcion h2:before{
+  /*content:'';
+  border-style: solid;
+  border-width: 15px 15px 15px 0px;
+  border-color: transparent red transparent transparent;
+  position:absolute;
+  left: 0;
+  margin-left: -15px;
+  top: 68%;*/
+  content: '';
+  border-color: transparent #233D58 transparent transparent;
+  border-style: solid;
+  border-width: 0px 12px 10px 12px;
+  left: -23px;
+  top: 46px;
+  position: absolute;
+
+}
+#slider #aboutme .descripcion p{
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+
+
+/****************SKILLS**************************/
 #slider #skills{
   height: 300px;
   background: blue;
