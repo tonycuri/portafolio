@@ -215,16 +215,17 @@ canvas {
   position: relative;
   padding-bottom: 50px;
 }
-#slider #aboutme figure{
+#slider #aboutme .contentabout figure{
   width: 100%;
   margin: 0;
   padding: 0;
 }
-#slider #aboutme img{
+#slider #aboutme .contentabout figure img{
   width: 100%;
+  margin-top: -33%;
 }
 #slider #aboutme .descripcion{
-  width: 70%;
+  width: 73%;
   margin-left: 10%;
   background: white;
   padding: 20px;
@@ -280,6 +281,53 @@ position: absolute;
 #slider #aboutme .descripcion p{
   margin-top: -20px;
   margin-bottom: 40px;
+}
+#slider #aboutme article{
+  width: 80%;
+  height: 220px;
+  margin-left: 10%;
+  display:inline-block;
+  background: white;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+
+}
+#slider #aboutme article figure{
+  width: 100%;
+  margin: 0;
+}
+#slider #aboutme article figure img{
+  width: 100%;
+}
+#slider #aboutme article .card_about{
+  position:absolute;
+  background: white;
+  height:220px;
+  top:150px;
+  transition-duration:0.5s;
+  cursor: pointer;
+}
+#slider #aboutme article .card_about:hover{
+  top:0px;
+}
+#slider #aboutme article p{
+  padding: 0 20px;
+  color:#29ABE2;
+  position:relative;
+}
+#slider #aboutme article p:last-child{
+  color:#2d2d2d;
+}
+#slider #aboutme article p:first-child:before{
+  font-family: 'icomoon';
+  content:'\ea0a';
+  position: absolute;
+  right: 20px;
+}
+#slider #aboutme article p span{
+  display: block;
+  color:#AFAEAE;
 }
 
 
@@ -480,11 +528,36 @@ footer p{
   #slider #home .buttonspage > *{
     width: 200px;
   }
+  #slider #aboutme article{
+    height: 300px;
+  }
+  #slider #aboutme article .card_about{
+    top:230px;
+    height: 300px;
+  }
 }
 
 @media screen and (min-width: 600px){
-  body{
-    background: orange;
+  #slider #aboutme .contentabout figure{
+    width: 80%;
+    margin-left: 10%;
+  }
+  #slider #aboutme .contentabout figure img{
+    margin-top: -150px;
+  }
+  #slider #aboutme .descripcion{
+    width: 60%;
+    margin-left: 17%;
+  }
+  #slider #aboutme article{
+    width: 37%;
+    margin-bottom: 50px;
+    margin-left: 8%;
+    height: 200px;
+  }
+
+  #slider #aboutme article .card_about{
+    top:140px;
   }
 }
 
@@ -588,11 +661,68 @@ footer p{
   #contact_button{
     right: 30px;
   }
+
 }
 
 
 @media screen and (min-width: 950px){
   body{
     background: green;
+  }
+  #slider #aboutme .contentabout{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 100px;
+    height: auto;
+    max-height: 500px;
+    background: white;
+    box-shadow: 0px 0px 3px #AFAEAE;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    position:relative;
+    margin-bottom: 40px;
+  }
+  #slider #aboutme .contentabout figure{
+    width: 100%;
+    margin-left: -400px;
+    height: 100%;
+    position:relative;
+    overflow: hidden;
+    min-height: 360px;
+  }
+  #slider #aboutme .contentabout figure img{
+  margin-left: 250px;
+  }
+  #slider #aboutme .contentabout .descripcion{
+    box-shadow: none;
+    width: 60%;
+    position:absolute;
+    top:0;
+    right: 0;
+    height: 100%;
+  }
+  #slider #aboutme .contentabout .descripcion p{
+    padding-top: 10px;
+  }
+  #slider #aboutme .containerAbout{
+    width: 70%;
+    margin-left: 15%;
+  }
+  #slider #aboutme .containerAbout article{
+    width: 23%;
+    margin-right: 2%;
+    margin-left: 0;
+    height: 180px;
+  }
+  #slider #aboutme .containerAbout article:last-child{
+    margin-right: 0;
+  }
+  #slider #aboutme  article .card_about{
+    top:115px;
+  }
+  #slider #aboutme  article .card_about p:last-child{
+    margin-top: 30px;
+    font-size: 0.8em;
   }
 }
