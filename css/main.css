@@ -330,12 +330,114 @@ position: absolute;
   color:#AFAEAE;
 }
 
-
 /****************SKILLS**************************/
 #slider #skills{
-  height: 300px;
-  background: blue;
+  background: #f1f1f1;
+  font-family: 'aller';
+  padding-bottom: 50px;
 }
+#slider #skills .content-tecnicas{
+  width: 98%;
+  margin:50px 1%;
+}
+#slider #skills h2{
+  margin-left: 30px;
+  font-size:1.3em;
+  text-transform: uppercase;
+}
+#slider #skills .tecnicas{
+  background: white;
+  padding: 20px 30px;
+  border:1px solid #ddd;
+}
+#slider #skills .tecnicas .tecnica p{
+  font-weight: bold;
+  font-size: 1.1em;
+}
+#slider #skills .tecnicas .tecnica progress{
+  width: 100%;
+  background: #f3f3f3;
+  border:0;
+  height: 18px;
+  border-radius: 9px;
+}
+#slider #skills .tecnicas .tecnica progress::-webkit-progress-bar{
+  background: #f3f3f3;
+  border-radius: 9px;
+}
+#slider #skills .tecnicas .tecnica progress::-webkit-progress-value{
+  background:#29ABE2 ;
+  border-radius: 9px;
+}
+#slider #skills .tecnicas .tecnica progress::-moz-progress-bar{
+  background: #29ABE2;
+  border-radius:9px;
+}
+#slider #skills .conocimientos ul{
+  list-style: none;
+  display:inline-block;
+  vertical-align: top;
+  padding: 0px 20px;
+  margin: 10px 5px;
+  position:relative;
+  max-width: 30%;
+  min-width: 15%;
+}
+#slider #skills .conocimientos ul li{
+  text-transform: uppercase;
+  font-size: 0.8em;
+  margin-bottom: 15px;
+  color:#000;
+  font-weight: lighter;
+}
+#slider #skills .conocimientos ul li:after{
+  font-family: 'icomoon';
+  content: '\ea10';
+  color:#29ABE2;
+  position:absolute;
+  left: 3px;
+}
+#slider #skills .hobbies h2{
+  margin-bottom: 50px;
+}
+#slider #skills .hobbies .hobbie{
+  width: 40%;
+  display:inline-block;
+  margin-left: 7%;
+  text-align: center;
+  margin-bottom: 40px;
+  vertical-align: top;
+}
+#slider #skills .hobbies .hobbie  div{
+  margin: 30px 0px;
+}
+#slider #skills .hobbies .hobbie  p{
+  text-transform: uppercase;
+}
+#slider #skills .hobbies .hobbie div:before{
+  font-family: 'icomoon';
+  text-align: center;
+  border:4px solid #29ABE2;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 2em;
+  color:#29ABE2;
+}
+#slider #skills .hobbies .hobbie:nth-of-type(1) div::before{
+  content:'\e910';
+}
+#slider #skills .hobbies .hobbie:nth-of-type(2) div::before{
+  content:'\e9a3';
+}
+#slider #skills .hobbies .hobbie:nth-of-type(3) div::before{
+  content:'\ea80';
+}
+#slider #skills .hobbies .hobbie:nth-of-type(4) div::before{
+  content:'\e956';
+}
+
+
+/**********************PORTAFOLIO******************************/
 #slider #portfolio{
   height: 200px;
   background: green;
@@ -535,6 +637,9 @@ footer p{
     top:230px;
     height: 300px;
   }
+  #slider #skills .conocimientos ul{
+    /*margin-right: 33px;*/
+  }
 }
 
 @media screen and (min-width: 600px){
@@ -559,6 +664,9 @@ footer p{
   #slider #aboutme article .card_about{
     top:140px;
   }
+  #slider #skills .conocimientos ul{
+    margin: 10px 5%;
+  }
 }
 
 @media screen and (min-width: 767px){
@@ -568,7 +676,6 @@ footer p{
   header{
     height: 50px;
   }
-
   header h1{
     display:inline-block;
     width: 20%;
@@ -661,7 +768,15 @@ footer p{
   #contact_button{
     right: 30px;
   }
-
+  #slider #skills .content-tecnicas,
+  #slider #skills .conocimientos,
+  #slider #skills .hobbies{
+    width: 70%;
+    margin-left: 15%;
+  }
+  #slider #skills .conocimientos ul{
+    margin-right: 2%;
+  }
 }
 
 
@@ -724,5 +839,41 @@ footer p{
   #slider #aboutme  article .card_about p:last-child{
     margin-top: 30px;
     font-size: 0.8em;
+  }
+  #slider #skills .content-tecnicas{
+    margin:10% 5%;
+    width: 90%;
+  }
+  #slider #skills .main-skills{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  #slider #skills .other-skills{
+    width: 50%;
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 2%;
+  }
+  #slider #skills .other-skills h2{
+    margin-bottom: 30px;
+  }
+  #slider #skills .conocimientos,
+  #slider #skills .hobbies{
+    margin-left: 5%;
+    width: 90%;
+  }
+  #slider #skills .conocimientos{
+    margin-bottom: 180px;
+  }
+  #slider #skills .conocimientos ul{
+    margin: 0;
+    margin-left: 2%;
+  }
+  #slider #skills .conocimientos ul li{
+    line-height: 25px;
+  }
+  #slider #skills .hobbies .hobbie:first-child{
+    margin-left: 3%;
   }
 }
