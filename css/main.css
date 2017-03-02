@@ -438,10 +438,60 @@ position: absolute;
 
 
 /**********************PORTAFOLIO******************************/
-#slider #portfolio{
-  height: 200px;
-  background: green;
+#slider #portfolio .categorias-title{
+  font-family: 'aldo';
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 10px;
 }
+#slider #portfolio .categorias-title h2{
+  border:1px solid #d2d2d2;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color:#2f2f2f;
+  font-size: 1.1em;
+  margin: 10px;
+  text-align: center;
+  margin-top: 0px;
+  background: white;
+  box-shadow: 1px 1px 1px #d2d2d2;
+}
+
+#slider #portfolio .categoria{
+  width: 60%;
+  height: 300px;
+  margin-left: 20%;
+  background: #29ABE2;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #d2d2d2;
+}
+#slider #portfolio .categoria figure{
+  width: 100%;
+  position:relative;
+}
+#slider #portfolio .categoria figure img{
+  width: 100%;
+  margin-top: 40px;
+  margin-left: -40px;
+  transform: scale(1.6);
+}
+#slider #portfolio .categoria figure figcaption{
+  position:absolute;
+  top:48%;
+  left:40px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+#slider #portfolio .categoria figure figcaption span{
+  display: block;
+  color:#c2c2c2;
+}
+
+/******************************BLOG*********************************/
 #slider #blog{
   height: 100px;
   background: yellow;
